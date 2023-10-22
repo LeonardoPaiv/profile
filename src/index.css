@@ -2,22 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-.xpBar {
-	background: linear-gradient(90deg, #ff9c1a, #ffcc80, #ff9c1a);
-	background-size: 300% 100%;
-	animation: gradient 5s ease infinite;
+html, body, #root {
+	width: 100%;
+	height: 100%;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 100% 50%;
-	}
-	50% {
-		background-position: 0% 50%;
-	}
-	100% {
-		background-position: 100% 50%;
-	}
+#root {
+	background: #070b14;
 }
