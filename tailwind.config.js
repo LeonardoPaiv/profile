@@ -92,6 +92,8 @@ export default {
       },
       animation: {
         gradient: "gradient 5s ease infinite",
+        'border-orange': 'border-orange 4s linear infinite',
+        'border-gray': 'border-gray 4s linear infinite',
       },
       keyframes: {
         gradient: {
@@ -105,9 +107,35 @@ export default {
             "background-position": "100% 50%",
           },
         },
+        'border-orange': {
+          "0%": {
+            "border-color": "#ff9c1a"
+          },
+          "50%": {
+            "border-color": "#935f00"
+          },
+          "100%": {
+            "border-color": "#ff9c1a"
+          }
+        },
+        'border-gray': {
+          "0%": {
+            "border-color": "#1f2937"
+          },
+          "50%": {
+            "border-color": "#6b7280"
+          },
+          "100%": {
+            "border-color": "#1f2937"
+          }
+        },
       },
       backgroundSize: {
         xp: "300% 100%",
+      },
+      fontFamily: {
+        sans: ['"Nanum Myeongjo"', 'sans-serif'],
+        chakra: ['"Chakra Petch"', '"sans-serif"'],
       },
     },
   },
