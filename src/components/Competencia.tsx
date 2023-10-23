@@ -6,7 +6,7 @@ const Competencia = ({color, categoria, competencia, nome}: IPropsCompetencia) =
       <img
         src={`/src/assets/competencias/${color}/${categoria}.svg`}
         alt={categoria}
-        className="w-16 mx-4"
+        className="w-16 mx-4 animate-pulse"
         title={categoria}
       />
       <div>
