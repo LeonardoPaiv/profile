@@ -7,6 +7,9 @@ export const listaXp: IPropsXpBar[] = [
     {ability: 'Angular', level: 99, w: 100},
     {ability: 'OracleSQL', level: 99, w: 100},
     {ability: 'OpenShift', level: 99, w: 100},
+    {ability: 'OpenShift', level: 99, w: 100},
+    {ability: 'OpenShift', level: 99, w: 100},
+    {ability: 'OpenShift', level: 99, w: 100},
 ]
 
 export const corSelecinado = color.O
