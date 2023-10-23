@@ -93,6 +93,7 @@ export default {
       animation: {
         gradient: "gradient 5s ease infinite",
         'border-orange': 'border-orange 4s linear infinite',
+        'border-purple': 'border-purple 4s linear infinite',
         'border-gray': 'border-gray 4s linear infinite',
       },
       keyframes: {
@@ -129,14 +130,27 @@ export default {
             "border-color": "#1f2937"
           }
         },
+        'border-purple': {
+          "0%": {
+            "border-color": "#7943bf"
+          },
+          "50%": {
+            "border-color": "#f88da9"
+          },
+          "100%": {
+            "border-color": "#7943bf"
+          }
+        },
       },
       backgroundSize: {
         xp: "300% 100%",
       },
       fontFamily: {
-        sans: ['"Nanum Myeongjo"', 'sans-serif'],
-        chakra: ['"Chakra Petch"', '"sans-serif"'],
+        sans: ['"Chakra Petch"', '"sans-serif"'],
       },
+      dropShadow: {
+        profile: '2px 8px 10px black'
+      }
     },
   },
   plugins: [],
