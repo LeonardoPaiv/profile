@@ -3,7 +3,7 @@ import Competencia from "./Competencia";
 
 const CompentenciaList = () => {
   return (
-    <ul className="border-l-2 ml-2 animate-border-gray overflow-auto self-center max-h-full">
+    <ul>
       {competenciasSelecionadas.map((c) => (
         <Competencia
           color={corSelecinado}

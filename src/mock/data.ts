@@ -9,7 +9,7 @@ export const listaXp: IPropsXpBar[] = [
     {ability: 'OpenShift', level: 99, w: 100},
 ]
 
-export const corSelecinado = color.O
+export const corSelecinado = color.P
 
 export const competenciasSelecionadas: ICompetencia[] = [
     listCompetencias[Competencia.PERFIL_TECNICO],
