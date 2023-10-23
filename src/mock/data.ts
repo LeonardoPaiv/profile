@@ -9,7 +9,10 @@ export const listaXp: IPropsXpBar[] = [
     {ability: 'OpenShift', level: 99, w: 100},
 ]
 
-export const corSelecinado = color.P
+export const corSelecinado = color.O
+
+export const linkedinURL = 'https://www.linkedin.com/in/leonadodepaiva/'
+export const githubUrl = 'https://github.com/LeonardoPaiv'
 
 export const competenciasSelecionadas: ICompetencia[] = [
     listCompetencias[Competencia.PERFIL_TECNICO],
