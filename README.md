@@ -1,27 +1,18 @@
-# React + TypeScript + Vite
+# Quick Profile Setup
+## English:
+This project provides a straightforward setup for creating your own profile page. By making a few adjustments in the "data.ts" file, you can customize all the information about yourself and create a page that resembles the showcase below:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![showcase](https://github.com/LeonardoPaiv/profile/blob/main/showcase.png?raw=true)
 
-Currently, two official plugins are available:
+In the "src/mock/data.ts" file, you'll discover a list containing your experience bars, the primary theme color, your personal URLs, and a list of your main soft skills. You have the freedom to manage these details according to your preferences.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To change the profile photo, simply replace the file located at "src\assets\profile.png" with your own photo. We recommend removing the background to enhance the profile's aesthetics.
 
-## Expanding the ESLint configuration
+## Portuguese:
+Este projeto oferece uma configuração rápida e simples para criar sua própria página de perfil. Fazendo algumas adaptações no arquivo "data.ts", você pode personalizar todas as informações sobre você e criar uma página que se assemelha ao exemplo abaixo:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![showcase](https://github.com/LeonardoPaiv/profile/blob/main/showcase.png?raw=true)
 
-- Configure the top-level `parserOptions` property like this:
+No arquivo "src/mock/data.ts", você encontrará uma lista com as barras de experiência, a cor principal do tema, seus URLs pessoais e uma lista de suas principais habilidades. Você tem a liberdade de gerenciar esses detalhes de acordo com suas preferências.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Para alterar a foto de perfil, basta substituir o arquivo localizado em "src\assets\profile.png" pela sua própria foto. Recomendamos remover o fundo para aprimorar a estética do perfil.
