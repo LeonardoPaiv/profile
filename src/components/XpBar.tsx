@@ -1,9 +1,10 @@
 import { mainColor } from "../mock/data";
 import { IPropsXpBar } from "../models/XpBar";
+import { color } from "../models/competencias";
 
 const XpBar = ({ w, ability, level }: IPropsXpBar) => {
   return (
-    <div className="text-gray-400 my-2">
+    <div className="text-gray-400 my-2 px-2">
       <div className="flex justify-between mx-4 font-extrabold">
         <span className="text-orange-400">{ability}</span>
         <span className="font-mono">Lv <span className="text-orange-400">{level}</span></span>
@@ -12,7 +13,7 @@ const XpBar = ({ w, ability, level }: IPropsXpBar) => {
         <div
           style={{ width: `${w}%` }}
           className={`h-full bg-xp bg-gradient-to-r 
-          ${`from-${mainColor}-400 via-${mainColor}-200 to-${mainColor}-400`}
+          ${mainColor === color.P ? 'from-purple-400 via-purple-200 to-purple-400' : 'from-orange-400 via-orange-200 to-orange-400'}
                     animate-gradient shadow-inner rounded-full`}
         ></div>
       </div>
