@@ -10,7 +10,7 @@ import {
   Tooltip
 } from 'chart.js';
 import { Bar } from "react-chartjs-2";
-import { competenciasSelecionadas, corSelecinado } from "../mock/data";
+import { mainColor, mainSoftSkills } from "../mock/data";
 import { categoria, color } from "../models/competencias";
 
 ChartJS.register(
@@ -23,16 +23,16 @@ ChartJS.register(
   );
 
 const CompetenciaChart = () => {
-  const numberAnalista = competenciasSelecionadas.filter(
+  const numberAnalista = mainSoftSkills.filter(
     (comp) => comp.categoria === categoria.ANALISTA
   ).length;
-  const numberComunicador = competenciasSelecionadas.filter(
+  const numberComunicador = mainSoftSkills.filter(
     (comp) => comp.categoria === categoria.COMUNICADOR
   ).length;
-  const numberExecutor = competenciasSelecionadas.filter(
+  const numberExecutor = mainSoftSkills.filter(
     (comp) => comp.categoria === categoria.EXECUTOR
   ).length;
-  const numberPlanejador = competenciasSelecionadas.filter(
+  const numberPlanejador = mainSoftSkills.filter(
     (comp) => comp.categoria === categoria.PLANEJADOR
   ).length;
 
@@ -53,7 +53,7 @@ const CompetenciaChart = () => {
         ],
         label: 'COMPETÊNCIAS',
         backgroundColor: "rgba(240, 240, 240, 0.2)",
-        borderColor: corSelecinado === color.O ? "#ff9c1a" : "#7943bf",
+        borderColor: mainColor === color.O ? "#ff9c1a" : "#7943bf",
         borderWidth: 1.5,
       },
     ],

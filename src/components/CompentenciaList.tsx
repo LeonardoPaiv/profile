@@ -1,12 +1,13 @@
-import { competenciasSelecionadas, corSelecinado } from "../mock/data";
+import { mainColor, mainSoftSkills } from "../mock/data";
 import Competencia from "./Competencia";
 
 const CompentenciaList = () => {
   return (
     <ul>
-      {competenciasSelecionadas.map((c) => (
+      {mainSoftSkills.map((c, i) => (
         <Competencia
-          color={corSelecinado}
+          key={i}
+          color={mainColor}
           categoria={c.categoria}
           competencia={c.competencia}
           nome={c.nome}

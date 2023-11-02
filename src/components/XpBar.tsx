@@ -1,6 +1,5 @@
-import { corSelecinado } from "../mock/data";
+import { mainColor } from "../mock/data";
 import { IPropsXpBar } from "../models/XpBar";
-import { color } from "../models/competencias";
 
 const XpBar = ({ w, ability, level }: IPropsXpBar) => {
   return (
@@ -13,7 +12,7 @@ const XpBar = ({ w, ability, level }: IPropsXpBar) => {
         <div
           style={{ width: `${w}%` }}
           className={`h-full bg-xp bg-gradient-to-r 
-          ${corSelecinado === color.O ? 'from-orange-400 via-orange-200 to-orange-400' : 'from-purple-400 via-purple-200 to-purple-400'}
+          ${`from-${mainColor}-400 via-${mainColor}-200 to-${mainColor}-400`}
                     animate-gradient shadow-inner rounded-full`}
         ></div>
       </div>

@@ -6,8 +6,8 @@ export enum categoria {
 }
 
 export enum color {
-  O = "laranja",
-  P = "roxo",
+  O = "orange",
+  P = "purple",
 }
 
 export interface ICompetencia {
