@@ -3,7 +3,7 @@ import XpBarList from "../XpBarList";
 
 const ProfileCol = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-around">
       <PhotoFrame />
       <XpBarList />
     </div>

@@ -10,6 +10,9 @@ export const xpList: IPropsXpBar[] = [
     {ability: 'OpenShift', level: 99, w: 100},
     {ability: 'OpenShift', level: 99, w: 100},
     {ability: 'OpenShift', level: 99, w: 100},
+    {ability: 'OpenShift', level: 99, w: 100},
+    {ability: 'OpenShift', level: 99, w: 100},
+    {ability: 'OpenShift', level: 99, w: 100},
 ]
 
 export const mainColor = color.O
@@ -22,5 +25,7 @@ export const mainSoftSkills: ICompetencia[] = [
     listCompetencias[Competencia.EMPATIA],
     listCompetencias[Competencia.DINAMISMO],
     listCompetencias[Competencia.EXTROVERSAO],
+    listCompetencias[Competencia.ORGANIZACAO],
+    listCompetencias[Competencia.ORGANIZACAO],
     listCompetencias[Competencia.ORGANIZACAO],
 ]
