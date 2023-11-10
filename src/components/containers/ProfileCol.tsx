@@ -1,10 +1,12 @@
 import PhotoFrame from "../PhotoFrame";
+import SocialIcon from "../SocialIcon";
 import XpBarList from "../XpBarList";
 
 const ProfileCol = () => {
   return (
-    <div className="flex flex-col justify-around">
+    <div className="flex flex-col col-span-2">
       <PhotoFrame />
+      <SocialIcon />
       <XpBarList />
     </div>
   );
