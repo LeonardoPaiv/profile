@@ -11,7 +11,7 @@ const XpBar = ({ w, ability, level }: IPropsXpBar) => {
       </div>
       <div className="w-full h-14 border border-gray-400/75 shadow-lg p-3 skew-x-[350deg]">
         <div
-          style={{ width: `${Math.random() * 100}%` }}
+          style={{ width: `${w}%` }}
           className={`h-full bg-xp bg-gradient-to-r 
           ${mainColor === color.P ? 'from-purple-400 via-orange-200 to-purple-400' : 'from-orange-400 via-purple-100 to-orange-400'}
                     animate-gradient shadow-inner`}

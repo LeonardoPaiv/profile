@@ -1,3 +1,4 @@
+import { IIcon } from "../models/IIcon";
 import { IPropsXpBar } from "../models/XpBar";
 import { Competencia, ICompetencia, color, listCompetencias } from "../models/competencias";
 
@@ -11,8 +12,10 @@ export const xpList: IPropsXpBar[] = [
 
 export const mainColor = color.O
 
-export const linkedinURL = 'https://www.linkedin.com/in/leonadodepaiva/'
-export const githubUrl = 'https://github.com/LeonardoPaiv'
+export const icons: IIcon[] = [
+    {src: `src/assets/icons/${mainColor}/github.svg`, link: 'https://github.com/LeonardoPaiv', title: 'Github'},
+    {src: `src/assets/icons/${mainColor}/linkedin.svg`, link: 'https://www.linkedin.com/in/leonadodepaiva/', title: 'Linkedin'},
+]
 
 export const mainSoftSkills: ICompetencia[] = [
     listCompetencias[Competencia.PERFIL_TECNICO],
